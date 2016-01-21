@@ -2,11 +2,13 @@
 
 This is a tool to help diagnose errors when connecting to a remote MySQL database.
 
-## example
+## invocation
 
-invocation:
+Only a handful of options are supported (you can see which ones by running with `--help`).  The options are identical to what the `mysql` command-line client uses.  Host, user, password, and database are required.  So if you are trying to connect with the MySQL client and getting an error, just replace `mysql` with `mysql-remote-diag`.
 
-    ./mysql-remote-diag-linux \
+example:
+
+    ./mysql-remote-diag \
         -hmysql.example.com \
         -ureporting-user \
         -pso-sekret \
@@ -42,6 +44,8 @@ result, showing an invalid TLS certificate on the server:
         "Passed": false,
         "Result": "error connecting: x509: certificate is valid for servercert, not mysql.example.com"
     }
+
+Provide the output to your friendly neighborhood customer service rep or ops folk and you'll be helping them help you!
 
 ## building
 
