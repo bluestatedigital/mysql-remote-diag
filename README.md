@@ -47,6 +47,10 @@ result, showing an invalid TLS certificate on the server:
 
 Provide the output to your friendly neighborhood customer service rep or ops folk and you'll be helping them help you!
 
+## downloading
+
+Grab the latest binary for your platform from the [releases](https://github.com/bluestatedigital/mysql-remote-diag/releases).
+
 ## building
 
 Just run `make`.  Binaries for your host platform (tested on OS X), linux amd64, and windows 386 are written to the `stage` directory.
